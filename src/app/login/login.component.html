@@ -1,0 +1,27 @@
+<form id="formularioLogin" [formGroup]="myFormLogin" (ngSubmit)="registro()">
+    <h2>Login</h2>
+    <div class="campos">
+        <label for="">Nombre</label>
+        <input type="text" formControlName="name" [ngClass]="{
+            error:myFormLogin.get('name')?.hasError('minlength') &&  myFormLogin.get('name')?.dirty || myFormLogin.get('name')?.hasError('required') && myFormLogin.get('name')?.dirty,
+            correct:myFormLogin.get('name')?.valid 
+         }">
+    </div>
+    <div id="erroresLoginNombre" *ngIf="myFormLogin.get('password')?.errors && myFormLogin.get('password')?.dirty">
+        <p *ngIf="myFormLogin.get('name')?.hasError('required')">Ingrese el nombre</p>
+        <p *ngIf="myFormLogin.get('name')?.hasError('minlength')">El nombre debe tener mas de 4 letras</p>
+    </div>
+    <div class="campos">
+        <label for="">Password</label>
+        <input type="text" formControlName="password" [ngClass]="{
+           error:myFormLogin.get('password')?.hasError('minlength') &&  myFormLogin.get('password')?.dirty || myFormLogin.get('password')?.hasError('required') && myFormLogin.get('password')?.dirty,
+           correct:myFormLogin.get('password')?.valid
+        }">
+    </div>
+    <div id="erroresLoginPassword" *ngIf="myFormLogin.get('password')?.errors && myFormLogin.get('password')?.dirty">
+        <p *ngIf="myFormLogin.get('password')?.hasError('required')">Ingrese Password</p>
+        <p *ngIf="myFormLogin.get('password')?.hasError('pattern')">El Password debe tener mas de 6 caracteres y debe contener al menos 1 minuscula, 1 mayuscula y un numero</p>
+        <p *ngIf="myFormLogin.get('password')?.hasError('pattern')"></p>
+    </div>
+    <input id="ingresar" type="submit" value='Ingresar' [disabled]="myFormLogin.invalid">
+</form>

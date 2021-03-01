@@ -1,0 +1,48 @@
+#formularioLogin {
+  display: flex;
+  margin: auto;
+  width: 400px;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20px;
+  background-color: rgb(180, 175, 175);
+  margin-bottom: 20px;
+}
+
+.campos {
+  display: grid;
+  margin: 20px;
+}
+
+.campos label {
+  margin-right: 20px;
+}
+
+#erroresLoginNombre {
+  color: red;
+  margin-top: -30px;
+}
+#erroresLoginPassword {
+  color: red;
+  margin-top: -30px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 70%;
+}
+
+#ingresar {
+  display: flex;
+  justify-content: center;
+  width: 30%;
+  color: black;
+  margin: 20px 0 20px 0;
+}
+
+.error {
+  background-color: rgba(250, 0, 0, 0.2);
+}
+
+.correct {
+  background-color: rgba(0, 250, 0, 0.3);
+}
