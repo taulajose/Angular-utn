@@ -1,12 +1,12 @@
 #formularioLogin {
+  flex-direction: column;
   display: flex;
   margin: auto;
   width: 400px;
-  flex-direction: column;
   align-items: center;
   border-radius: 20px;
   background-color: rgb(180, 175, 175);
-  margin-bottom: 20px;
+  margin-top: 90px;
 }
 
 .campos {

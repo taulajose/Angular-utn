@@ -15,7 +15,8 @@
     <div class="campos">
         <label for="">Email</label>
         <input type="text" formControlName="email" [ngClass]="{
-            error: myForm.get('email')?.hasError('pattern')
+            error: myForm.get('email')?.hasError('pattern'),
+            correct:myForm.get('email')?.valid
         }">
     </div>
     <div id="erroresEmail" *ngIf="myForm.get('email')?.errors && myForm.get('email')?.dirty">

@@ -1,1 +1,24 @@
-
+<div class="tituloProductos">
+    <h2>Detalle</h2>
+</div>
+<div class="contenedorProductos">
+    <div class="divProductos">
+        <div class="izquierda" *ngIf="loading">
+            <p>{{producto[0].name}}</p>
+            <p>Precio: ${{producto[0].price}}</p>
+            <div class="botones">
+                <button routerLink="/home">Volver</button>
+                <!-- <button (click)="comprar()" [disabled]="comprado">Comprar</button> -->
+            </div>
+         </div>
+         <div *ngIf="!loading">
+             loading...
+         </div>
+    </div>
+    <div class="divDetalle">
+        <h1>Producto N°{{producto[0].id}}</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam in quis similique 
+            neque ipsam veritatis asperiores sequi, voluptas architecto quas aspernatur et 
+            totam tenetur nemo iure repellendus quos illum praesentium.</p>
+    </div>
+</div>

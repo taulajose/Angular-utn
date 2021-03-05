@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {ProductosService} from '../productos.service'
 
 @Component({
   selector: 'app-home',
@@ -6,10 +7,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
+  productos:any = []
+ 
+  constructor(private productosSrv:ProductosService) { 
 
-  constructor() { }
+  }
 
-  ngOnInit(): void {
+  async ngOnInit(){
+    try{
+      this.productos = await this.productosSrv.getProductos().toPromise();
+    }catch(e){
+      console.log("Error",e)
+    }
   }
 
 }

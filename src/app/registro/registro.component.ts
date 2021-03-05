@@ -21,6 +21,7 @@ export class RegistroComponent implements OnInit {
    registro(){
      console.log(this.myForm.value)
    }
+   
   ngOnInit(): void {
   }
 
