@@ -4,7 +4,6 @@
 <div class="contenedorProductos">
     <div class="divProductos" *ngFor="let producto of productos">
         <p>Producto N°{{producto.id}}</p>
-        <p>Precio: ${{producto.price}}</p>
         <button routerLink="/productos/{{producto.id}}">Ver detalle</button>
         
     </div>
