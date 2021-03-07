@@ -1,27 +1,23 @@
 # AngularUTN2021
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.1.
+Consigna:
 
-## Development server
+Desarrollar en angular un ecommerce con las siguientes paginas:
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Home: Listado de más de 2 productos. 
+Detalle de producto
+Al navegar a dicha página mostrar el detalle completo del producto
+Registro
+Realizar maquetado y validaciones (no realizar guardado de datos)
+Login
+Realizar maquetado y validaciones (no realizar guardado de datos)
+Los datos de los productos podrán ser consultados a:
 
-## Code scaffolding
+API REST (desarrolladas de manera particular por cada alumno, no se evalúa en el curso)
+Mockup de datos con archivos json
+API REST publicas
+En caso de no contar con ninguna de las anteriores utilizar:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+https://jsonplaceholder.typicode.com/
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Renderizar la entidad "post"
