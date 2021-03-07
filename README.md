@@ -7,9 +7,11 @@ Desarrollar en angular un ecommerce con las siguientes paginas:
 Home: Listado de más de 2 productos. 
 Detalle de producto
 Al navegar a dicha página mostrar el detalle completo del producto
-Registro
+
+Registro:
 Realizar maquetado y validaciones (no realizar guardado de datos)
-Login
+
+Login:
 Realizar maquetado y validaciones (no realizar guardado de datos)
 Los datos de los productos podrán ser consultados a:
 
